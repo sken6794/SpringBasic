@@ -11,5 +11,5 @@ public interface ScoreService {
 	
 	public ArrayList<ScoreVO> getScores();
 	
-	public void scoreDelete(int index);
+	public void scoreDelete(int num);
 }

@@ -60,8 +60,8 @@ public class ScoreController {
 	
 	//삭제요청
 	@RequestMapping("/scoreDelete")
-	public String scoreDelete(@RequestParam("num") int index) {
-		scoreService.scoreDelete(index);
+	public String scoreDelete(@RequestParam("num") int num) {
+		scoreService.scoreDelete(num);
 		
 		return "redirect:/service/scoreList"; //삭제하고 나면 컨트롤러의 List 띄우는 요청으로
 	}
